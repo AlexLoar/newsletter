@@ -1,0 +1,4 @@
+.idea/
+*.py[cod]
+*.log
+feeds_db

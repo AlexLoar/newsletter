@@ -1,0 +1,8 @@
+arrow==0.14.2
+Django==2.2.3
+feedparser==5.2.1
+html2text==2018.1.9
+python-dateutil==2.8.0
+pytz==2019.1
+six==1.12.0
+sqlparse==0.3.0

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ subject }}</title>
+</head>
+<body>
+
+  <p>Tenemos nuevos post!</p>
+
+  {% for feed, entries in feed_entries.items %}
+    <h1>{{ feed }}</h1>
+
+    {% for entry in entries %}
+    <div>
+      <h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+      <div><blockquote>{{ entry.summary|truncatewords_html:"500"|safe }}</blockquote></div>
+      <p><a href="{{ entry.url }}">Leer.</a></p>
+    </div>
+    {% endfor %}
+  {% endfor %}
+
+  <br>
+  <div>
+    <p>👋 Hasta la próxima.</p>
+    <p>Álex <sub>(o al menos un mensaje generado por ordenador escrito por él)</sub></p>
+  </div>
+
+</body>
+</html>
