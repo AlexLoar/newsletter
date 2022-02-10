@@ -1,5 +1,5 @@
 arrow==0.14.2
-Django==2.2.13
+Django==2.2.27
 feedparser==5.2.1
 html2text==2018.1.9
 python-dateutil==2.8.0
